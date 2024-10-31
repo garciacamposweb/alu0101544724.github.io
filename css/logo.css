@@ -1,0 +1,531 @@
+/*Colores que voy a usar*/
+:root {
+	--azul: #3109e5;
+	--fondo: #141414;
+}
+
+/*Margenes que van a tener mi pagina*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Configuramos el body el fondo y las letras*/
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Vamos a encerrar en un contenedor lo que estamos haciendo*/
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+/*Vamos a agregar un margen en la parte de arriba y abajo del header*/
+header {
+	padding: 30px 0;
+}
+
+/*Y vamos a sobreescribir algunos estilos del contenedor*/
+header .contenedor {
+	/*Esto es pa poner logotipo der y lo otro izq*/
+	display: flex;
+	/*Con esto el logo queda a la izquierda y el menu a la derecha*/
+	justify-content: space-between;
+	/*Con esto centramos los elementos de forma ertical*/
+	align-items: center;
+}
+
+/*Editamos logotipo SG*/
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--azul);
+	font-size: 40px;
+}
+
+/*Editamos menu*/
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+/*Esto lo hacemos para que el principal este blanco y cuando pase por encima*/
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+.subrayado {
+    text-decoration: none;
+}
+
+/*-----------------------Final de cabecera----------------------------*/
+
+
+
+/* Editar titulo*/
+.titulo1 {
+    text-align: center; 
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    margin: 15px;
+    font-size: 50px;
+}
+
+/*------------------------------CORAZON--------------------------------*/
+
+.contenedor-corazon {
+        width: 80%;
+        margin: auto;  
+}
+
+.contenedor-corazon {
+	width: 1020px;
+    height: 450px;
+
+}
+.container-amor {
+    /*Ancho y alto*/
+    width: 600px;
+    height: 300px;
+    /*Borde*/
+    /*border: 3px solid blue;*/
+    right: -200px;
+    bottom: -10px;
+    position: relative;
+}
+
+
+/*Palabra principal centro corazon*/
+.amor {
+    position: absolute;
+    right: 250px;
+    bottom: 115px;
+    color: red;
+    font-size: 30px;
+
+}
+
+/*Accedemos a las demas palabras*/
+
+.container-amor {
+    p {
+        color: red;
+        /*Damos una sombra*/
+        box-shadow: -10px 15px 100px #f20044;
+    }
+}
+
+.primera {
+    position: absolute;
+    right: 250px;
+    bottom: 0;
+}
+.segunda {
+    position: absolute;
+    right: 225px;
+    bottom: 15px;
+}
+.tercera {
+    position: absolute;
+    right: 215px;
+    bottom: 25px;
+}
+.cuarta {
+    position: absolute;
+    right: 205px;
+    bottom: 35px;
+}
+.quinta {
+    position: absolute;
+    right: 190px;
+    bottom: 45px;
+}
+.sexta {
+    position: absolute;
+    right: 175px;
+    bottom: 60px;
+}
+.septima {
+    position: absolute;
+    right: 165px;
+    bottom: 75px;
+}
+.octava {
+    position: absolute;
+    right: 145px;
+    bottom: 90px;
+}
+.novena {
+    position: absolute;
+    right: 140px;
+    bottom: 105px;
+}
+.decima {
+    position: absolute;
+    right: 125px;
+    bottom: 120px;
+}
+.decima1 {
+    position: absolute;
+    right: 110px;
+    bottom: 135px;
+}
+.decima2 {
+    position: absolute;
+    right: 100px;
+    bottom: 150px;
+}
+.decima3 {
+    position: absolute;
+    right: 100px;
+    bottom: 165px;
+}
+.decima4 {
+    position: absolute;
+    right: 100px;
+    bottom: 165px;
+}
+.decima5 {
+    position: absolute;
+    right: 100px;
+    bottom: 180px;
+}
+.decima6 {
+    position: absolute;
+    right: 105px;
+    bottom: 195px;
+}
+.decima7 {
+    position: absolute;
+    right: 110px;
+    bottom: 210px;
+}
+.decima8 {
+    position: absolute;
+    right: 120px;
+    bottom: 225px;
+}
+.decima9 {
+    position: absolute;
+    right: 130px;
+    bottom: 240px;
+}
+.vigesima {
+    position: absolute;
+    right: 140px;
+    bottom: 255px;
+}
+.vigesima1 {
+    position: absolute;
+    right: 175px;
+    bottom: 270px;
+}
+.vigesima2 {
+    position: absolute;
+    right: 205px;
+    bottom: 255px;
+}
+.vigesima3 {
+    position: absolute;
+    right: 220px;
+    bottom: 240px;
+}
+.vigesima4 {
+    position: absolute;
+    right: 230px;
+    bottom: 225px;
+}
+.vigesima5 {
+    position: absolute;
+    right: 240px;
+    bottom: 210px;
+}
+.vigesima6 {
+    position: absolute;
+    right: 250px;
+    bottom: 190px;
+}
+
+/*Ahora la otra mitad del corazon*/
+.primera- {
+    position: absolute;
+    right: 275px;
+    bottom: 15px;
+}
+.segunda- {
+    position: absolute;
+    right: 285px;
+    bottom: 30px;
+}
+.tercera- {
+    position: absolute;
+    right: 305px;
+    bottom: 40px;
+}
+.cuarta- {
+    position: absolute;
+    right: 315px;
+    bottom: 55px;
+}
+.quinta- {
+    position: absolute;
+    right: 345px;
+    bottom: 70px;
+}
+.sexta- {
+    position: absolute;
+    right: 355px;
+    bottom: 85px;
+}
+.septima- {
+    position: absolute;
+    right: 360px;
+    bottom: 100px;
+}
+.octava- {
+    position: absolute;
+    right: 375px;
+    bottom: 115px;
+}
+.novena- {
+    position: absolute;
+    right: 388px;
+    bottom: 128px;
+}
+.decima- {
+    position: absolute;
+    right: 395px;
+    bottom: 140px;
+}
+.decima1- {
+    position: absolute;
+    right: 405px;
+    bottom: 155px;
+}
+.decima2- {
+    position: absolute;
+    right: 425px;
+    bottom: 160px;
+}
+.decima3- {
+    position: absolute;
+    right: 100px;
+    bottom: 165px;
+}
+.decima4- {
+    position: absolute;
+    right: 420px;
+    bottom: 170px;
+}
+.decima5- {
+    position: absolute;
+    right: 430px;
+    bottom: 190px;
+}
+.decima6- {
+    position: absolute;
+    right: 435px;
+    bottom: 205px;
+}
+.decima7- {
+    position: absolute;
+    right: 415px;
+    bottom: 220px;
+}
+.decima8- {
+    position: absolute;
+    right: 413px;
+    bottom: 235px;
+}
+.decima9- {
+    position: absolute;
+    right: 405px;
+    bottom: 248px;
+}
+.vigesima- {
+    position: absolute;
+    right: 390px;
+    bottom: 265px;
+}
+.vigesima1- {
+    position: absolute;
+    right: 370px;
+    bottom: 279px;
+}
+.vigesima2- {
+    position: absolute;
+    right: 340px;
+    bottom: 265px;
+}
+.vigesima3- {
+    position: absolute;
+    right: 320px;
+    bottom: 250px;
+}
+.vigesima4- {
+    position: absolute;
+    right: 310px;
+    bottom: 235px;
+}
+.vigesima5- {
+    position: absolute;
+    right: 300px;
+    bottom: 215px;
+}
+.vigesima6- {
+    position: absolute;
+    right: 285px;
+    bottom: 200px;
+}
+.vigesima7- {
+    position: absolute;
+    right: 285px;
+    bottom: 290px;
+}
+
+/*Corazon latiendo*/
+.container-amor {
+    p {
+        animation: latiendo 0.6s linear infinite;
+    }
+}
+
+@keyframes latiendo {
+    0%{transform: scale(1.4);}
+    80%{transform: scale(2.);}
+}
+
+/*----------------------------------------------------------------*/
+
+  p {
+    text-wrap: pretty;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 3rem;
+  }
+  
+  .container-letter {
+    position: relative;
+  }
+  
+  .cover {
+    position: absolute;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 100px solid #fe3334;
+    border-bottom: 100px solid transparent;
+  
+    transition: transform .75s;
+    transform-origin: top;
+  }
+  
+  .paper {
+    position: absolute;
+    padding: 1.5rem;
+    line-height: 2rem;
+    right: 5px;
+    z-index: -1;
+    background: white;
+    width: 390px;
+    height: 180px;
+  
+    transition: all .75s;
+  }
+  
+  .letter {
+    border-left: 200px solid #ee635e;
+    border-right: 200px solid #ee6c73;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #c9565a;
+  }
+  
+  .options {
+    display: flex;
+    gap: 5rem;
+  
+    & button {
+      color: #ff3234;
+      font-weight: 600;
+      border-radius: 3px;
+      background: #fad7df;
+      padding: 0.5rem 1rem;
+      border: 1px solid #fe3334;
+      cursor: pointer;
+    }
+  
+    & button:hover {
+      background: #91484c;
+      color: white;
+    }
+  }
+  
+  .open-cover {
+    transform: rotatex(180deg);
+  }
+  
+  .open-paper {
+    animation: openPaper .5s forwards;
+  }
+
+  .center {
+    display: block;
+    text-align: center;
+  }
+  
+  @keyframes openPaper {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: -120px;
+    }
+  }
+  
+  .close-paper {
+    animation: closePaper .5s forwards;
+  }
+  
+  @keyframes closePaper {
+    0% {
+      top: -120px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+  .heart {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 46.5%;
+    margin: auto;
+    font-size: 3rem;
+    color: #56e4c5;
+    animation: crecer 1s forwards ;
+  }
+  
+  @keyframes crecer {
+    0% {
+      scale: 1;
+      opacity: 1;
+    }
+    100% {
+      scale: 3;
+      opacity: 0;
+  
+    }
+  }

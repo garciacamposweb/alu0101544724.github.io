@@ -1,0 +1,86 @@
+/*Colores que voy a usar*/
+:root {
+	--azul: #3109e5;
+	--fondo: #141414;
+}
+
+/*Margenes que van a tener mi pagina*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Configuramos el body el fondo y las letras*/
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Vamos a encerrar en un contenedor lo que estamos haciendo*/
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+/*Vamos a agregar un margen en la parte de arriba y abajo del header*/
+header {
+	padding: 30px 0;
+}
+
+/*Y vamos a sobreescribir algunos estilos del contenedor*/
+header .contenedor {
+	/*Esto es pa poner logotipo der y lo otro izq*/
+	display: flex;
+	/*Con esto el logo queda a la izquierda y el menu a la derecha*/
+	justify-content: space-between;
+	/*Con esto centramos los elementos de forma ertical*/
+	align-items: center;
+}
+
+/*Editamos logotipo SG*/
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--azul);
+	font-size: 40px;
+}
+
+/*Editamos menu*/
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+/*Esto lo hacemos para que el principal este blanco y cuando pase por encima*/
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+.subrayado {
+    text-decoration: none;
+}
+
+/*-----------------------Final de cabecera----------------------------*/
+
+/*------------------VIDEO-----------------------------*/
+.video {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center; 
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    margin: 15px;
+    font-size: 50px;
+}
+
+video {
+    width: 100%;
+}
+/*--------------------------------------------------*/
+

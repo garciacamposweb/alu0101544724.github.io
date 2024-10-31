@@ -1,0 +1,336 @@
+
+/*Colores que voy a usar*/
+:root {
+	--azul: #3109e5;
+	--fondo: #141414;
+}
+
+/*Margenes que van a tener mi pagina*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Configuramos el body el fondo y las letras*/
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Vamos a encerrar en un contenedor lo que estamos haciendo*/
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+/*Vamos a agregar un margen en la parte de arriba y abajo del header*/
+header {
+	padding: 30px 0;
+}
+
+/*Y vamos a sobreescribir algunos estilos del contenedor*/
+header .contenedor {
+	/*Esto es pa poner logotipo der y lo otro izq*/
+	display: flex;
+	/*Con esto el logo queda a la izquierda y el menu a la derecha*/
+	justify-content: space-between;
+	/*Con esto centramos los elementos de forma ertical*/
+	align-items: center;
+}
+
+/*Editamos logotipo SG*/
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--azul);
+	font-size: 40px;
+}
+
+/*Editamos menu*/
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+/*Esto lo hacemos para que el principal este blanco y cuando pase por encima*/
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+.subrayado {
+    text-decoration: none;
+}
+
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal {
+	font-size: 16px;
+	/*Altura minima que queremos que tenga*/
+	min-height: 40.62em;
+	/*Color de la fuente*/
+	color: #fff;
+	/*Agregar imagen de fondo*/
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/dis2.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+/*Estilo del titulo*/
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+/*Estilo descripción*/
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+/*Vamos a configurar botones*/
+.pelicula-principal .boton {
+	/*Color botones*/
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	/*Hacerle borde a los botones*/
+	border-radius: 0.31em;
+	/*Tamaño botones*/
+	padding: 0.93em 1.87em;
+	/*Color*/
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	/*Cambie color al pasar pulsor*/
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+/*Separar boton*/
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+
+/*Cambiar fondo al pulsar boton*/
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+/*-------------------------------------------------------------*/
+
+/*------------------Contenedor imagenes----------------------*/
+/*Vamos a encerrar en un contenedor lo que estamos haciendo*/
+.contenedor2 {
+	width: 90%;
+	margin: auto;
+}
+
+.contenedor-imagenes {
+	width: 100px;
+    height: 800px;
+	width: 90%;
+	margin: auto;
+
+}
+
+.slider-position {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.slider-container {
+	background-image: url(../img/img1.jpg);
+	background-size: cover;
+	height: 50%;
+	width: 50%;
+	border-radius: 10px;
+	animation: animate 10s infinite;
+}
+
+@keyframes animate {
+	20% {
+		background-image: url(../img/img5.jpg);
+		background-size: cover;
+	}
+	40% {
+		background-image: url(../img/img4.jpg);
+		background-size: cover;
+	}
+	60% {
+		background-image: url(../img/img3.jpg);
+		background-size: cover;
+	}
+	80% {
+		background-image: url(../img/img2.jpg);
+		background-size: cover;
+	}
+	100% {
+		background-image: url(../img/img1.jpg);
+		background-size: cover;
+	}
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+/*Color titulo*/
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+/*Estilo a los botones*/
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+/*Cambie al color rojo*/
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+/*Le ponemos un margen*/
+.peliculas-recomendadas {
+	margin-bottom: 70px;
+}
+
+/*Poner los elementos en horizontal*/
+.peliculas-recomendadas .contenedor-principal {
+    /*Transformo todos los elementos a una linea horizontal*/
+	display: flex;
+    /*Los centro verticalmente*/
+	align-items: center;
+    /*Acomodo las flechas*/
+    position: relative;
+}
+
+/*Editar boton de las flechas*/
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+/*Poner cada flecha en su sitio*/
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/*Poner efecto al pasar pulsor flechas*/
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+/* ---- ----- ----- Carousel ----- ----------------------- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%; /*Imagen ocupa el contenedor*/
+	padding: 20px 0; /*Espaciado*/
+	overflow: hidden; /*Todo lo que salga del 100% poner oculto*/
+	scroll-behavior: smooth; 
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+/*Efectos imagenes*/
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+/*Centrar las imagenes*/
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+    /*Para que el carousel si se hace pequeño se disperse*/
+    .peliculas-recomendadas .contenedor-carousel {
+		overflow: visible;
+	}
+
+    .peliculas-recomendadas .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+    .peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+	}
+}
